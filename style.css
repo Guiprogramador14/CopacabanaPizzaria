@@ -8978,3 +8978,10 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+body, html {
+  overflow-x: hidden;
+  touch-action: pan-y;
+}
