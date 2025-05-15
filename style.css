@@ -8984,4 +8984,11 @@ textarea.form-control {
 body, html {
   overflow-x: hidden;
   touch-action: pan-y;
+  
 }
+
+.home-slider {
+  touch-action: pan-y;
+  overflow-y: auto;
+}
+
