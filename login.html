@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Copacabana Pizzaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="images/Logo Copacabana Pizzaria.png" type="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 100%;
+      max-width: 400px;
+    }
+    .password-toggle {
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      top: 38px;
+      color: #6c757d;
+    }
+    .position-relative {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card shadow">
+    <div class="card-body p-4">
+      <h3 class="card-title text-center mb-4">Login</h3>
+
+      <form id="loginForm" method="POST" action="login.php">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="mb-3 position-relative">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
+          <span class="password-toggle" onclick="togglePassword()">👁️</span>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        <div id="loginError" class="text-danger mt-2">
+          <?php if(isset($erro)) echo $erro; ?>
+        </div>
+      </form>
+
+      <hr>
+      <div class="text-center">
+        <p>Não tem uma conta? <a href="cadastro.html" class="btn btn-success btn-sm">Criar conta</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const senha = document.getElementById('senha');
+      if (senha.type === 'password') {
+        senha.type = 'text';
+      } else {
+        senha.type = 'password';
+      }
+    }
+  </script>
+
+</body>
+</html>

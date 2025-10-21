@@ -31,25 +31,41 @@
   </head>
 
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-		      <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Copacabana<br><small>Pizzaria</small></a>
-		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-		        <span class="oi oi-menu"></span> Menu
-		      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-	          <li class="nav-item"><a href="menu.html" class="nav-link">Cardápio</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Serviços</a></li>
-	          <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">Sobre nós</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li>
-	        </ul>
-	      </div>
-		  </div>
-	  </nav>
-    <!-- END nav -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="flaticon-pizza-1 mr-1"></span>Copacabana<br><small>Pizzaria</small>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" 
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link">Cardápio</a></li>
+        <li class="nav-item"><a href="services.html" class="nav-link">Serviços</a></li>
+        <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">Sobre nós</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contato</a></li>
+
+        <!-- Dropdown de usuário -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" 
+             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Conta
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="login.html">Login</a>
+            <a class="dropdown-item" href="cadastro.html">Cadastro</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- END nav --> 
 
     <section class="home-slider owl-carousel img" style="background-image: url(images/bg_1.jpg);">
 
@@ -439,7 +455,7 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpwCXAJE2ELZx0Y2Jk2_YAnL3EzR8knQc&callback=initMap"></script>tps://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     

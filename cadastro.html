@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow p-4">
+          <h2 class="card-title text-center mb-4">Cadastre-se</h2>
+          <form method="post" action="cadastrar.php" id="cadastrar" name="cadastrar">
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome</label>
+              <input type="text" name="nome" id="nome" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="dataNascimento" class="form-label">Data de nascimento</label>
+              <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="cpf" class="form-label">CPF</label>
+              <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00" required>
+              <div id="cpfFeedback" class="text-danger d-none">CPF inválido.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="rg" class="form-label">RG</label>
+              <input type="text" class="form-control" id="rg" name="rg" maxlength="12" placeholder="00.000.000-0" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="telefone" class="form-label">Telefone</label>
+              <input type="text" class="form-control" id="telefone" name="telefone" maxlength="15" placeholder="(00) 00000-0000" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="cep" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="cep" name="cep" maxlength="9" placeholder="00000-000" required>
+              <div id="cepFeedback" class="text-danger d-none"></div>
+            </div>
+
+            <div class="mb-3">
+              <label for="endereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="numero" class="form-label">Número</label>
+              <input type="text" class="form-control" id="numero" name="numero" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="complemento" class="form-label">Complemento</label>
+              <input type="text" class="form-control" id="complemento" name="complemento">
+            </div>
+
+            <div class="mb-3">
+              <label for="bairro" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="bairro" name="bairro" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="cidade" name="cidade" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="estado" class="form-label">Estado</label>
+              <select class="form-select" id="estado" name="estado" required>
+                <option value="">Selecione</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Senha</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="senha" name="senha" required>
+                <button type="button" class="btn btn-outline-secondary" id="toggleSenha">Mostrar</button>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Confirmar Senha</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="confirmSenha" required>
+                <button type="button" class="btn btn-outline-secondary" id="toggleConfirmSenha">Mostrar</button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <button type="submit" class="btn btn-primary w-48">Cadastrar</button>
+              <button type="reset" class="btn btn-secondary w-48">Limpar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="cadastro.js"></script>
+</body>
+</html>
