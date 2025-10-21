@@ -8973,3 +8973,9 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    .dropdown-menu .dropdown-item:hover {
+  background-color: #f39c12; /* muda o fundo no hover */
+  color: #fff; /* muda a cor do texto se quiser */
+}
